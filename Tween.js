@@ -53,6 +53,10 @@
             this.setting.step.apply(this,[val]);
 
             if(this.setting.duration <= elapsedTime){
+                for(var key in this.end){
+                    val[key] = this.end[key];
+                }
+                this.setting.step.apply(this,[val]);
                 this.stop();
                 this.setting.complete.apply(this,[]);
             }else{
