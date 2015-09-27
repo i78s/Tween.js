@@ -4,8 +4,8 @@
   "description": "シンプルなTweenクラス",
   "main": "Tween.js",
   "scripts": {
-    "build": "babel src --out-file Tween.js --source-maps inline",
-    "watch": "babel src --out-file Tween.js --watch --source-maps inline",
+    "build": "babel src --out-dir dist --source-maps inline",
+    "watch": "babel src --out-dir dist --watch --source-maps inline",
     "test": "npm run build && mocha test/*.js"
   },
   "repository": {

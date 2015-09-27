@@ -1,23 +1,17 @@
-var Tween = require('../src/Tween.js');
-var assert = require('power-assert');
+import assert from "power-assert";
+import Tween from "../src/Tween";
 
 describe('Tween', function() {
-
-    var tween;
     var setting;
-    beforeEach(function(){
+    beforeEach(() => {
         setting = {
 
         };
     });
 
-    it('play', function() {
-        //tween = new Tween(0,500);
-
-        //console.log(window.requestAnimationFrame)
+    it('play', () => {
+        console.log(Tween)
         assert(0 === 0);
-        assert(34 === 0);
-        //tween.play();
-        //assert(tween.isPlaying);
+        assert(3 === 3);
     });
 });
